@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Popup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="container">
+    <img
+      src="img/130eb853-005d-4ce7-811a-af4471337dc5_removalai_preview (1).png"
+      alt="Foto Utama"
+      id="mainPhoto"
+      class="main-birthday-photo"
+    >
+    <canvas id="birthdayCanvas"></canvas>
+  </div>
+
+  <div class="box">
+    <h3>Password</h3>
+    <input type="password" id="password" placeholder="Masukkan password">
+    <button onclick="cekPassword()">Submit</button>
+  </div>
+
+  <!-- MODAL KEJUTAN -->
+  <div id="wishModal" class="modal1">
+    <div class="modal-content1">
+      <span class="close-button">&times;</span>
+      <img src="img/hayo lohhhh.png" class="special-image">
+    </div>
+  </div>
+
+  <!-- MODAL PASSWORD -->
+  <div class="modal" id="popup">
+    <div class="modal-content">
+      <h3>Password Benar ✅</h3>
+      <p>Klik link di bawah:</p>
+      <a href="https://example.com" target="_blank">Buka Website</a>
+      <br><br>
+      <button onclick="tutup()">Tutup</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

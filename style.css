@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f3e8;
+  font-family: Georgia, serif;
+  color: #4b4b4b;
+}
+
+/* LAYOUT */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 650px;
+  padding: 24px;
+  padding-top: 250px;
+}
+
+/* FOTO */
+.main-birthday-photo {
+  width: clamp(220px, 70vw, 320px);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+  cursor: pointer;
+  transition: transform .3s;
+}
+.main-birthday-photo:hover {
+  transform: scale(1.05);
+}
+
+/* PASSWORD BOX */
+.box {
+  width: clamp(260px, 85vw, 360px);
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.box h3 {
+  color: #00ffcc;
+}
+
+/* INPUT & BUTTON */
+input, button {
+  width: 90%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+}
+button {
+  margin-top: 10px;
+  background: #00ffcc;
+  cursor: pointer;
+}
+
+/* CANVAS */
+#birthdayCanvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* 🔴 MODAL KEJUTAN (AWAL: TIDAK MUNCUL) */
+.modal1 {
+  display: none;                /* ⬅️ INI PENTING */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content1 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+.close-button {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+.special-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 🔴 MODAL PASSWORD (AWAL: TIDAK MUNCUL) */
+.modal {
+  display: none;                /* ⬅️ INI PENTING */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.modal a {
+  color: #00ffcc;
+  text-decoration: none;
+}
